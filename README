@@ -1,0 +1,9 @@
+This is the official Powermate SDK, plus a small hacked utility I wrote to provide Wave Output volume control from the Powermate. The utility isn't really configurable or user-friendly, but it does function. If you run it, it will give you a largely dysfunctional UI. Click "close" and it will remain in the background. If you actually want to kill it, you'll have to force-quit it. There are no accessible configuration options.
+
+You'll need Visual Studio, MFC, and the DDK in order to build the project. The free versions of Visual Studio don't support MFC. MFC is only used for the UI on the project, however - the DDK itself doesn't require it - so if you didn't want to use the demo code, or could extract the actual hardware-specific code, you could probably use the free version of Visual Studio.
+
+The USB protocol document is included in the Windows API zip. In theory, that's all you'll need to write drivers on other OSes.
+
+PowerMate support gave me their blessing to put all of this online, so I've done so. My changes to the PowerMate_HID program are public domain. I cannot vouch for any other code involved here, nor do I know what license it is provided under. YMMV, IANAL, here be dragons, etc.
+
+Good luck!
